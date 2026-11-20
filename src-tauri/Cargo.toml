@@ -1,0 +1,19 @@
+[package]
+name = "eclipse30618-swyft-servo-programmer"
+version = "0.1.0"
+description = "Eclipse30618 Swyft Servo Programmer — read and flash SWYFT servo parameters over USB-to-UART"
+authors = ["FTC Team Eclipse 30618"]
+edition = "2021"
+
+[lib]
+name = "eclipse30618_swyft_servo_programmer_lib"
+crate-type = ["staticlib", "cdylib", "rlib"]
+
+[build-dependencies]
+tauri-build = { version = "2.0.0", features = [] }
+
+[dependencies]
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+serialport = "4"
+tauri = { version = "2.0.0", features = [] }

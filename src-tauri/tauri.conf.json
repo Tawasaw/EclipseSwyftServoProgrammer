@@ -1,0 +1,40 @@
+{
+  "$schema": "https://schema.tauri.app/config/2",
+  "productName": "Eclipse30618 Swyft Servo Programmer",
+  "version": "0.1.0",
+  "identifier": "com.eclipse30618.ftc.swyftservoprogrammer",
+  "build": {
+    "beforeDevCommand": "npm run dev",
+    "devUrl": "http://127.0.0.1:5173",
+    "beforeBuildCommand": "npm run build",
+    "frontendDist": "../dist"
+  },
+  "app": {
+    "windows": [
+      {
+        "title": "Eclipse30618 Swyft Servo Programmer",
+        "width": 1180,
+        "height": 820,
+        "minWidth": 980,
+        "minHeight": 680,
+        "center": true
+      }
+    ]
+  },
+  "bundle": {
+    "active": true,
+    "targets": "all",
+    "category": "DeveloperTool",
+    "publisher": "FTC Team Eclipse 30618",
+    "copyright": "Copyright © FTC Team Eclipse 30618. Based on SWYFT Servo Programmer V2 © SWYFT Robotics (MIT).",
+    "shortDescription": "Read and flash SWYFT servo parameters",
+    "longDescription": "Cross-platform utility by FTC Team Eclipse 30618 for reading and writing SWYFT servo parameters over a single-wire half-duplex UART link (USB-to-UART adapter).",
+    "icon": [
+      "icons/32x32.png",
+      "icons/128x128.png",
+      "icons/128x128@2x.png",
+      "icons/icon.icns",
+      "icons/icon.ico"
+    ]
+  }
+}
