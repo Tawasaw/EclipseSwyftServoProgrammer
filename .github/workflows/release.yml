@@ -68,7 +68,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           tagName: ${{ github.ref_name }}
-          releaseName: "Eclipse30618 Swyft Servo Programmer ${{ github.ref_name }}"
+          releaseName: "EclipseSwyftServoProgrammer ${{ github.ref_name }}"
           releaseBody: |
             | Platform | File |
             |----------|------|
